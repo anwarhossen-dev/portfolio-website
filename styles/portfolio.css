@@ -34,6 +34,7 @@ header{
     background-image: url('../images/developer.png'), url('../images/header_bg.png');
     background-repeat: no-repeat;
     background-position: top left, bottom right;
+  
     /* padding: 0 0 0 20px; */
 }
 
@@ -178,26 +179,40 @@ footer input[type="text"], footer input[type="email"], footer textarea{
     border: none;
 }
 /* Responsive media query */
-.hide{
+/* .hide{
     display: none;
-}
-@media screen and (max-width: 576px) {
+} */
+@media (max-width: 576px) {
     .skills-container,
     .header,
-     .resume-container,
-     .about-items,
-      .footer{
-       flex-direction: column;
+    .resume-container,
+    .about-items,
+    .footer 
+     {
+        /* flex-direction: column; */
+        display: none;
     }
-    footer, .about{
+    .banner{
+        flex-direction: column !important;
+        display: none;
 
+    }
+
+    .banner-content {
+        display: none; 
+    }
+
+    footer, .about {
         padding: 20px;
     }
-    .footer-column{
+
+    .footer-column {
         width: 100%;
     }
-    footer input[type="text"], footer input[type="email"], footer textarea{
+
+    footer input[type="text"],
+    footer input[type="email"],
+    footer textarea {
         width: calc(100% - 40px);
     }
-    
 }
