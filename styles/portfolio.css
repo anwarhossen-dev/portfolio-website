@@ -115,6 +115,7 @@ main section{
 }
 /* About styles */
 .about{
+    background-color: #FFF8F3;
     border-radius: 10px;
     padding: 130px 150px;
     text-align: center;
@@ -171,7 +172,7 @@ footer{
 footer input[type="text"], footer input[type="email"], footer textarea{
     height: 60px;
     border-radius: 5px;
-    background-color: white;
+    background-color: rgb(241, 239, 239);
     display: block;
     width: 100%;
     padding: 10px 20px;
@@ -182,28 +183,50 @@ footer input[type="text"], footer input[type="email"], footer textarea{
 /* .hide{
     display: none;
 } */
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
     .skills-container,
     .header,
     .resume-container,
-    .about-items,
-    .footer 
-     {
-        /* flex-direction: column; */
-        display: none;
+    .footer ,
+    .nav,
+    nav > ul,
+    .about-items
+    {
+        flex-direction: column;
+        /* display: none; */
+    }
+
+    nav > ul{
+        gap: 30px;
+    }
+    .btn-primary{
+        margin-bottom: 20px;
     }
     .banner{
         flex-direction: column !important;
-        display: none;
+        /* display: none; */
+        
 
     }
+    .banner-profile-pic{
+        width: 100%;
+    }
+    .header{
+        background-image: none;
+    }
+
 
     .banner-content {
-        display: none; 
-    }
+        /* display: none;  */
+        margin: 30px;
+    /* }
+    .banner-title{
+        padding: 10px;
+    } */
 
     footer, .about {
         padding: 20px;
+        
     }
 
     .footer-column {
