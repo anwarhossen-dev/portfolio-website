@@ -219,10 +219,10 @@ footer input[type="text"], footer input[type="email"], footer textarea{
     .banner-content {
         /* display: none;  */
         margin: 30px;
-    /* }
+    }
     .banner-title{
-        padding: 10px;
-    } */
+        margin: 10px;
+    }
 
     footer, .about {
         padding: 20px;
@@ -238,4 +238,4 @@ footer input[type="text"], footer input[type="email"], footer textarea{
     footer textarea {
         width: calc(100% - 40px);
     }
-}
+  }
